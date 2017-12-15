@@ -32,4 +32,7 @@ else # Changes detected, md5 doesn't match.
 	wait %1 			# Waits for rm to finish
 	ffdec -export frame timetables_next/ index_next.swf # Uses ffdec to export all frames
 	md5sum index_next.swf > checklist_next.chk # Creates md5 checksum to check for 
+	git add -A
+	git commit -m "Extracted next week images on `date +'%Y-%m-%d %H:%M:%S'` for $url";
+	git push origin master;
 fi
