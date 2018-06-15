@@ -5,7 +5,7 @@ TimeTableDump has 3 diferent scripts. These were made with the particular setup 
 
 The scripts are:
  - pull.sh - The main script that we use to pull the student timetables. This is meant only if the required site has a single .swf flash file.
- - pull_teachers.sh - We use this script to pull down the teacer timetables, it's meant for use with sites that use the combination of multiple swf files for a single category. (We have about 130 teachers, and there seems to be a 89 table limit per file.)
+ - pull_teachers.sh - We use this script to pull down the teacher timetables, it's meant for use with sites that use the combination of multiple swf files for a single category. (We have about 130 teachers, and there seems to be a 89 table limit per file.)
  - pull_next.sh - This is an experimental script that is meant to automatically calculate the first and last dates of next week, and attempt to pull the timetable. This isn't beeing used in production and will most likely need to be compleatly rewritten.
 
 
