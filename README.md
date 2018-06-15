@@ -8,6 +8,9 @@ The scripts are:
  - pull_teachers.sh - We use this script to pull down the teacher timetables, it's meant for use with sites that use the combination of multiple swf files for a single category. (We have about 130 teachers, and there seems to be a 89 table limit per file.)
  - pull_next.sh - This is an experimental script that is meant to automatically calculate the first and last dates of next week, and attempt to pull the timetable. This isn't beeing used in production and will most likely need to be compleatly rewritten.
 
+These scripts are being used to serve .png files to the webserver at [OVTDMP](https://mednis.id.lv/OVTDMP/), as well as serving for the OVTDMP github repository.
+
+This is (as far as i know) the only way to  extract these timetables from the software without buying the seemingly expensive HTML5 upgrade from asc. The main use for this is to view school timetables on mobile devices that don't have/support flash player, as well as older computers that seem to have troubles loading the flash content. 
 
 ## Requirements
 - Linux/Unix based OS (Tested only on Ubuntu 16.10/18.10)
