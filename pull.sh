@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ######################################
-#     Reinis Gunārs Mednis 2018		 #
+#     Reinis Gunārs Mednis 2018	     #
 # Student Timetable Dump version 2.3 #
 ######################################
 # Please read the README.md file for #
