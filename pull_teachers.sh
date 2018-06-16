@@ -24,6 +24,8 @@ skolotaji_2=''
 export_1=''
 export_2=''
 
+# If you are using chrontab to launch this script, uncomment the next line and modify it to point t]o the script directory.
+# cd /home/timetabledump/
 
 # Removes the previous flash files, copy and modify the below string for more files.
 rm skolotaji_0.swf
