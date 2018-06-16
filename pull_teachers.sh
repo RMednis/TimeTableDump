@@ -52,11 +52,11 @@ else # The hashes don't match, there might be changes.
 	
 	# Remove previous dumps, and dump the first flash file
 	# Copy and modify these lines for as many files as you need!
-	rm $export_1
+	rm $export_1*
 	ffdec -export frame $export_1 skolotaji_0.swf # Export images from file 1
 
 	# Remove previous dumps, and dump the second flash file
-	rm $export_2
+	rm $export_2*
 	ffdec -export frame $export_2 skolotaji_1.swf # Export images from file 2
 	
 	# Lets create a hash of these files!
