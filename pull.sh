@@ -13,11 +13,14 @@
 # PATH="/timetables/"
 PATH=''
 
-
 # The URL where the file is hosted on the server
 # Example:
 # URL='http://ovt.lv/stundas/stundu_saraksts/index.swf'
 URL=''
+
+# If you are using chrontab to launch this script, uncomment the next line and modify it to point t]o the script directory.
+# cd /home/timetabledump/
+
 
 # Removing the previous files (assuming the file is named index.swf)
 rm index.swf
@@ -31,7 +34,7 @@ if md5sum -c checklist_students.chk; then
 	exit
 else
 	# Hashes are diferent, there seem to be changes!
-	rm $PATH # Removes previous timetables / their folder.
+	rm $PATH* # Removes previous timetables / their folder.
 	ffdec -export frame $PATH index.swf # Uses ffdec to export all frames from the swf files.
 	md5sum index.swf > checklist_students.chk # Creates md5 checksum to check for changes.
 	
