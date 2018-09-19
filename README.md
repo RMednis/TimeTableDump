@@ -25,6 +25,6 @@ The overall configuration of these scripts should be pretty straight forward. Ea
 The setup is as follows:
 1. Install all required software. (See requirements above)
 2. Pull this git repo.
-3. 1. For the pull.sh script add the url to the flash (.swf) file in the URL parameter, and add the path to where you want to extract said file in the PATH veriable. If needed uncoment and add the git repo path.
+3. 1. For the pull.sh script add the url to the flash (.swf) file in the URL parameter, and add the path to where you want to extract said file in the EXPATH veriable. If needed uncoment and add the git repo path.
    2. For te pull_teachers.sh script you need to specify the URLS for each of the .swf files, aswell as where to export each of them. If you need to extract more files, copy and modify the specified lines acordingly!
 4. Setup chron tasks to launch each script based on your preferences.
