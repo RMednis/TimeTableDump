@@ -11,7 +11,8 @@
 # The path where the timetables should be extracted to.
 # Example:
 # PATH="/timetables/"
-PATH=''
+
+EXPATH=''
 
 # The URL where the file is hosted on the server
 # Example:
@@ -31,11 +32,14 @@ wget $URL -O index.swf
 # Checking for changes using md5 hashes!
 if md5sum -c checklist_students.chk; then 
 	# Both old and new hashes match!
+	echo "All hashes match! No changes in timetables!"
+	# There's nothing else to do... time to..
 	exit
 else
 	# Hashes are diferent, there seem to be changes!
-	rm $PATH* # Removes previous timetables / their folder.
-	ffdec -export frame $PATH index.swf # Uses ffdec to export all frames from the swf files.
+	echo "Hashes are different! Pulling latest timetables!"
+	rm $EXPATH* # Removes previous timetables / their folder.
+	ffdec -export frame $EXPATH index.swf # Uses ffdec to export all frames from the swf files.
 	md5sum index.swf > checklist_students.chk # Creates md5 checksum to check for changes.
 	
 	# Git pushing the changes (optional)
