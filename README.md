@@ -19,6 +19,11 @@ This is (as far as i know) the only way to  extract these timetables from the so
 - md5sum
 - date
 
+**If you would like to use the automatic list updating script, these packages are also required.**
+- Python 3.6
+- Beutifullsoup 4
+- URLlib3
+
 ## Setup
 The overall configuration of these scripts should be pretty straight forward. Each script includes comments about what each line is doing.
 
